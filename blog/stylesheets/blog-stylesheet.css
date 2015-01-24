@@ -1,3 +1,43 @@
 * {
-	color: red;
+	font-family: Gotham;
 }
+
+h1 {
+	margin: 50px 50px 5px 50px;
+}
+
+h2 {
+	margin: 10px 50px 10px 80px;
+}
+
+h4 {
+	margin: -30px 50px 25px 900px;
+	
+}
+
+p {
+	margin: 15px 50px 10px 50px;
+}
+
+
+#firstparagraph {
+	padding-top: 15px;
+} 
+#bottomparagraph {
+	padding-bottom: 15px;
+}
+
+
+#top {
+	height: 2px;
+	width: 1090px;
+	background-color: #161693;
+	margin: 1px 50px 1px 50px;
+}
+ 
+ #bottom {
+ 	height: 2px;
+ 	width: 1090px;
+ 	background-color: #19A3A3;
+ 	margin: 0px 50px 0px 50px;
+ }
