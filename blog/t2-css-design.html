@@ -23,29 +23,43 @@
 
         How about this example: I am making a website. I want to have icons that link to my different social media sites. Facebook, Twitter, and LinkedIn.
 
-        I want all three elements to be sized in the same way but for some reason, my Facebook icon is a little bigger that the other two. 
+        I want all three of my icons to be sized in the same way but for some reason, my Facebook icon is a little bigger that the other two. 
 
     </p>
     <p id="bottomparagraph">
-        So I think ID's are easier to understand. You have a million images or div's and you want to call on a specific one in your CSS file. Giving one an special ID name make it easy to do that. So let's see how you would use ID's for the example above:
-
-            ![ID's Only--HTML](t2-css-design-images/image-1.png)
-
-        IDs are unique. Each element can only have one ID and each page can have only one element with that ID. 
-
-        So this is what you would maybe see in your CSS file. 
-
-            ![ID's Only--CSS](t2-css-design-images/image-2.png)
-
-
-        Classes are not unique; they are general. You can use the same class on multiple elements on the same page and you can use multiple classes on the same element. See the HTML below:
-
-            ![Classes--HTML](t2-css-design-images/image-3.png)
-
-            ![Classes--CSS](t2-css-design-images/image-4.png)
-        
+        So I think ID's are easier to understand, so I'm going to start there. You have a million images or div's and you want to call on a specific one in your CSS file. Giving one a special ID badge makes it easy to do that. So let's see how you would use ID's for the example I described above:
     </p>
 
+
+                <img class = "image1" src= "t2-css-design-images/image-1.png"/>
+
+    <p>
+        I have three different div's, each with their own ID. So the thing to remember is that IDs are unique. Any one element can only have one ID, and each page can have only one element that has that ID. 
+    <p>
+        So this is what you would maybe see in your CSS file. 
+    </p>
+    </p>
+            <img class = "image2" src = "t2-css-design-images/image-2.png" />
+    <p>
+
+        Okay, so how could do go abou this a different way using classes? Classes are <strong>not</strong> unique; they are general. You can use the same class on multiple elements on the same page and you can use multiple classes on the same element. 
+
+    <p>
+      See the HTML below:
+    </p>
+
+    </p>
+            <img class = "image1" src ="t2-css-design-images/image-3.png" />
+    </p>
+    <p>
+      I replaced all of the unique ID's with a class ("social-media-icon"). This way I don't have to repeat the same properties for each icon. (Yay!) Do note that I left the ID for the Facebook icon, because I still want to adjust that image specifically without touching any other image. 
+
+            <img class = "image2" src = "t2-css-design-images/image-4.png" />
+        
+    </p>
+    <p>
+      If you can imagine having hundreds of different elements (rather than just three) you can see why it would be wise to use a class rather than many IDs. 
+      
       <!-- copy and paste as many sections as you want to add paragraphs -->
   </section>
 
