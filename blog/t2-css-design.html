@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css"/>
+  <!--../stylesheets/blog-stylesheet.css--> 
+</head>
+
+<main>
+  <h1>Technically speaking...</h1>
+  <h2>Classes versus IDs</h2>
+  <h4>January 25th, 2015 </h4>
+
+  <div id="top"> </div> <div id="bottom"> </div>
+
+
+  <section>
+    <p id="firstparagraph">
+        WHAT ARE BEST PRACTICES ASSOCIATED WITH USING CLASSES vs IDS?
+    </p>
+    <p>
+        If you have many things that need the same styling, you should use a class. This way you can save yourself the time and trouble of applying the same rules to several selectors. 
+
+        How about this example: I am making a website. I want to have icons that link to my different social media sites. Facebook, Twitter, and LinkedIn.
+
+        I want all three elements to be sized in the same way but for some reason, my Facebook icon is a little bigger that the other two. 
+
+    </p>
+    <p id="bottomparagraph">
+        So I think ID's are easier to understand. You have a million images or div's and you want to call on a specific one in your CSS file. Giving one an special ID name make it easy to do that. So let's see how you would use ID's for the example above:
+
+            ![ID's Only--HTML](t2-css-design-images/image-1.png)
+
+        IDs are unique. Each element can only have one ID and each page can have only one element with that ID. 
+
+        So this is what you would maybe see in your CSS file. 
+
+            ![ID's Only--CSS](t2-css-design-images/image-2.png)
+
+
+        Classes are not unique; they are general. You can use the same class on multiple elements on the same page and you can use multiple classes on the same element. See the HTML below:
+
+            ![Classes--HTML](t2-css-design-images/image-3.png)
+
+            ![Classes--CSS](t2-css-design-images/image-4.png)
+        
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+
+  <div id="bottom"> </div> <div id="top"> </div> 
+</main>
+
