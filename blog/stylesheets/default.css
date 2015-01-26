@@ -1,0 +1,64 @@
+#portrait {
+	height:150px;
+	width:150px;
+}
+
+#portrait img {
+	width:100%;
+	height: auto;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+
+h2 {
+	font-size: 25px;
+	margin-left: 360px;
+	margin-top:-40px;
+	margin-bottom:40px;
+}
+
+#header {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.tbody {
+	height: 190px;
+	width: auto;
+}
+
+.tbody img {
+	width:100%;
+	height:auto;
+}
+
+#tbody-text {
+	font-size: 30px;
+	font-weight: 2px;
+	margin:auto;
+}
+
+.bannerlinks {
+	height: 10px;
+	width: auto;
+	margin-left: 800px;
+	margin-top: -500px;
+}
+
+.bannerlinks img {
+	width:10%;
+	height:auto;
+}
+
+div > a {
+	height: 10px;
+	width:10px;
+}
+
+.footer {
+	margin-top: 700px;
+	margin-left: 1000px;
+}
+	
+
+

@@ -19,12 +19,16 @@ p {
 	margin: 15px 50px 10px 50px;
 }
 
-#firstparagraph {
-	padding-top: 15px;
-} 
 
+#firstparagraph {
+	border-top: 2px solid #161693;
+	padding-top: 15px;
+	margin: 1px 50px 1px 50px
+} 
 #bottomparagraph {
+	border-bottom: 2px solid #19A3A3;
 	padding-bottom: 15px;
+	margin: 0px 50px 0px 50px
 }
 
 
