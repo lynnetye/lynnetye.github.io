@@ -18,7 +18,7 @@ header {
 }
 
 header > h1 {
-  font-size: 66px;
+  font-size: 70px;
   padding-top: 140px;
   text-shadow: 0 0 80px rgba(0, 0, 0, .5);
 }
@@ -42,7 +42,7 @@ h2 {
 h3 {
   color: white;
   font-size: 40px;
-  padding-right: 120px;
+  padding-right: 110px;
   padding-top: 60px;
   text-align: right;
   text-shadow: 0 0 30px rgba(0, 0, 0, .8);
@@ -58,16 +58,24 @@ section {
   background-size: cover;
 }
 
-.my-projects {
-  background-image: url("../images/blog/banner-work-station.jpg");
-  background-size: cover;
-  background-position: 0 -90px;
-
-}
-
 .my-blog {
-  background-image: url("../images/blog/banner-beach-railway.jpeg");
+  background-image: url("../images/blog/banner-jellyfish.jpg");
   background-size: cover;
   background-position: 0 -240px;
+}
+
+.my-projects {
+  background-image: url("../images/blog/banner-work-station-3.jpeg");
+  background-size: cover;
+  background-position: 0 480px;
+}
+
+.my-timeline {
+  background-image: url("../images/blog/header-mountainside.jpg");
+  background-size: cover;
+  background-position: 0 -160px;
   margin-bottom: 30px;
 }
+
+
+
