@@ -1,0 +1,73 @@
+html {
+  font-family: Rokkitt;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+ }
+
+header {
+  background-image: url("../images/blog/header-dark-forest-trees.jpeg");
+  background-position: 0px -60px;
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+header > h1 {
+  font-size: 66px;
+  padding-top: 140px;
+  text-shadow: 0 0 80px rgba(0, 0, 0, .5);
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.social-icon-container {
+  bottom: 20px;
+  position: absolute;
+  right: 30px;
+}
+
+.social-icon-container > a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+h3 {
+  color: white;
+  font-size: 40px;
+  padding-right: 120px;
+  padding-top: 60px;
+  text-align: right;
+  text-shadow: 0 0 30px rgba(0, 0, 0, .8);
+}
+
+section {
+  height: 280px;
+  margin-top: 30px;
+}
+
+.about-me {
+  background-image: url("../images/blog/banner-leaves-on-deck.jpeg");
+  background-size: cover;
+}
+
+.my-projects {
+  background-image: url("../images/blog/banner-work-station.jpg");
+  background-size: cover;
+  background-position: 0 -90px;
+
+}
+
+.my-blog {
+  background-image: url("../images/blog/banner-beach-railway.jpeg");
+  background-size: cover;
+  background-position: 0 -240px;
+  margin-bottom: 30px;
+}
