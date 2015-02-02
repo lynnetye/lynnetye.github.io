@@ -53,6 +53,10 @@ section {
   margin-top: 30px;
 }
 
+.my-blog a {
+  color: white;
+}
+
 .banner-text a {
   text-decoration: none;
   color: white;
