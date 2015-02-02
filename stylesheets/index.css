@@ -58,6 +58,9 @@ section {
   color: white;
 }
 
+a {
+  color: white;
+}
 a:active {
   color: white;
 }
