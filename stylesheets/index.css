@@ -58,10 +58,11 @@ section {
   color: white;
 }
 
-a {
+a:active {
   color: white;
 }
-a:active {
+
+a:link {
   color: white;
 }
 
