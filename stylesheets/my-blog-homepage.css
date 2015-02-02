@@ -1,0 +1,83 @@
+html {
+  font-family: Lora;
+  height: 100%;}
+
+body {
+  height: 100%;
+ }
+
+header {
+  background-image: url("../images/blog/banner-beach-car.jpg");
+  background-size: cover;
+  background-position: 0 -220px;
+  height: 400px;
+}
+
+/*.header-links {
+  font-size: 30px;
+  text-align: center;
+  margin: 80px auto;
+}*/
+
+.header-links > a {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  color:black;
+}
+
+a:visited {
+  color: black;
+}
+
+.container {
+  font-size: 24px;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.blog-post-preview {
+  margin: 22px;
+}
+
+.blog-post-preview > .content > h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.blog-post-preview > .content > h3 {
+  font-size: 20px;
+  margin-left: 10px;
+  padding-top: 15px;
+}
+
+.blog-post-preview > .content > h4 {
+  font-size: 16px;
+  font-style: italic;
+  margin-left: 10px;
+  padding-top: 15px;
+}
+
+.blog-post-preview > .content {
+  border: 1px solid #E3DDD9;
+  height: 100px;
+  width: calc(100% - 184px);  /* calc combines px and %*/
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.blog-post-preview > .image {
+  height: 142px;
+  width: 142px;
+  background-image: url("../images/blog/banner-street-art.jpg");
+  background-size: cover;
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+}
+

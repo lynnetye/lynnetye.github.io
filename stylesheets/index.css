@@ -18,9 +18,9 @@ header {
 }
 
 header > h1 {
-  font-size: 70px;
+  font-size: 80px;
   padding-top: 140px;
-  text-shadow: 0 0 80px rgba(0, 0, 0, .5);
+  text-shadow: 0 0 50px rgba(0, 0, 0, 1);
 }
 
 h2 {
@@ -41,11 +41,11 @@ h2 {
 
 h3 {
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   padding-right: 110px;
   padding-top: 60px;
   text-align: right;
-  text-shadow: 0 0 30px rgba(0, 0, 0, .8);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
 }
 
 section {
@@ -53,24 +53,36 @@ section {
   margin-top: 30px;
 }
 
-.about-me {
+.banner-text a {
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+#about-me {
   background-image: url("../images/blog/banner-leaves-on-deck.jpeg");
   background-size: cover;
 }
 
-.my-blog {
+#my-blog {
   background-image: url("../images/blog/banner-jellyfish.jpg");
   background-size: cover;
   background-position: 0 -240px;
 }
 
-.my-projects {
+#my-projects {
   background-image: url("../images/blog/banner-work-station-2.jpeg");
   background-size: cover;
   background-position: 0 680px; /*0 480px for work-station-2.jpeg*/
 }
 
-.my-timeline {
+#my-timeline {
   background-image: url("../images/blog/banner-bexley.jpg");
   background-size: cover;
   background-position: 0 -250px;
