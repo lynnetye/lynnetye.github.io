@@ -1,8 +1,7 @@
 html {
   font-family: "Lora", serif;
   font-weight: 300;
-  height: 100%;
-}
+  height: 100%;}
 
 body {
   height: 100%;
@@ -15,8 +14,8 @@ header {
 }
 
 .image {
-  background-image: url("../images/blog/banner-street-art.jpg");
-  background-position: 0px -60px;
+  background-image: url("../images/blog/amy-purdy.jpg");
+  background-position: 0px -200px;
   background-size: cover;
   height: 400px;
   margin: 50px auto;
@@ -25,23 +24,19 @@ header {
 
 h1 {
   font-size: 50px;
+  margin-bottom: 25px;
   line-height: 120%;
-  margin: 25px auto;
-  max-width: 700px;
 }
 
 h2 {
   font-size: 26px;
-  line-height: 120%;
-  margin:25px auto;
-  max-width: 700px;
 }
 
 h3 {
   font-style: italic;
   font-size: 20px;
   line-height: 120%;
-  margin: 15px;
+  margin: 20px;
 }
 
 .blog-text > section {
@@ -53,10 +48,5 @@ h3 {
 }
 
 p {
-  margin: 20px 0;
-}
-
-.paragraph-head {
-  font-weight: bold;
-  margin-top: 30px;
+  padding-bottom: 15px;
 }

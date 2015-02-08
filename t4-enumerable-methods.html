@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="stylesheets/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="stylesheets/blog-post-template.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic|Merriweather:400,300,300italic,400italic,700italic,700|Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header>
+    <div class="image"></div>
+    <h1>Group_by Method Almost Prevents Underage Drinking</h1>
+    <h2>Because sometimes you blog about Ruby methods on a Saturday night</h2>
+    <h3>February 6th, 2015 : 10 minutes</h3>
+  </header>
+  <div class="blog-text">
+    <section>
+      <p>I am going to explain how to use the group_by method the way I wished it was explained to me.</p>
+      <p> group_by is a method that...</p>
+      <ol>
+        <li>-  can be used to group integers or strings</li>
+        <li>-  is called by either an array or hash</li>
+        <li>-  is more powerful when followed by a block specifying how the user wants to group information</li>
+      </ol>
+
+      <p class="paragraph-head">Example #1 : An array of integers</p>
+      <p>I have an array of all the ages of my team members. I want to do a bar crawl but wait...is everyone old enough?</p>
+      <img src="images/t4-enumerable-methods-images/image-1.png"/>
+
+      <p>You can see that I've called the group_by method on my array of ages. The block that I've passed looks for ages that are old enough to (legally) drink, and you can see group_by has separated the ages by those that pass true and false in the block. </p>
+
+    <p class="paragraph-head">Example #1 (continued): An array of integers + group labels</p>
+      <p>You can also specify how you'd like to label each group by editing the block. Below, I am using the exact same array as before but replacing "true" and "false" with "Party Peoples!" and "Too Young..." respectively.</p>
+      <img src="images/t4-enumerable-methods-images/image-2.png"/>
+
+      <p class="paragraph-head">Example #2 : A hash with strings and integers</p>
+      <p>So now I know that 2 of my teammates can't go to the bars with me, but...who are they? Below, I've created a hash with the names of the people whose ages we were previously looking at.</p>
+
+      <img src="images/t4-enumerable-methods-images/image-3.png"/>
+
+      <p>I can call the group_by method to my hash just like I did with my array to get the names of my underaged friends. (Maybe I shouldn't even both inviting them.)</p>
+
+      <img src="images/t4-enumerable-methods-images/image-4.png"/>
+
+      <p class="paragraph-head">Example #2 (continued) : A hash with strings and integers + randomly assigning groups</p>
+      <p>After much thought...it'd be really sad for Abbey and Emerson to not be able to join us simply because of their age. So instead, why don't I just host something at my place? I'll provide the drinks and people can bring whatever they want. Or better yet! I can randomly group them to bring chasers and snacks.</p>
+
+      <img src="images/t4-enumerable-methods-images/image-5.png"/>
+
+
+      <p>I hope that helps explain how the group_by method works. Let me know if I missed something or if anything was confusing!</p>
+    </section>
+  </div>
+</body>
+
+</html>
