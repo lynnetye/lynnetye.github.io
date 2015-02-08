@@ -13,12 +13,6 @@ header {
   height: 400px;
 }
 
-/*.header-links {
-  font-size: 30px;
-  text-align: center;
-  margin: 80px auto;
-}*/
-
 .header-links > a {
   padding-left: 40px;
   padding-right: 40px;
@@ -28,6 +22,7 @@ header {
 
 a:active {
   color:black;
+  text-decoration: none;
 }
 
 a:visited {
@@ -41,7 +36,13 @@ a:visited {
 }
 
 .blog-post-preview {
+  color: #42474A;
   margin: 22px;
+}
+
+.blog-post-preview h2 a {
+  color: black;
+  text-decoration: none;
 }
 
 .blog-post-preview > .content > h2 {
@@ -51,20 +52,17 @@ a:visited {
 
 .blog-post-preview > .content > h3 {
   font-size: 20px;
-  margin-left: 10px;
   padding-top: 15px;
 }
 
 .blog-post-preview > .content > h4 {
   font-size: 16px;
   font-style: italic;
-  margin-left: 10px;
   padding-top: 15px;
 }
 
 .blog-post-preview > .content {
   border: 1px solid #E3DDD9;
-  height: 100px;
   width: calc(100% - 184px);  /* calc combines px and %*/
   padding: 20px;
   display: inline-block;
