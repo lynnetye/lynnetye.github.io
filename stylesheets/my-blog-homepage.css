@@ -52,17 +52,17 @@ a:visited {
 
 .blog-post-preview > .content > h3 {
   font-size: 20px;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 .blog-post-preview > .content > h4 {
   font-size: 16px;
   font-style: italic;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 .blog-post-preview > .content {
-  border: 1px solid #E3DDD9;
+  border: .5px solid #E3DDD9;
   width: calc(100% - 184px);  /* calc combines px and %*/
   padding: 20px;
   display: inline-block;
