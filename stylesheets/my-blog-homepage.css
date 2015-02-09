@@ -14,10 +14,10 @@ header {
 }
 
 .header-links > a {
+  color: black;
   padding-left: 40px;
   padding-right: 40px;
   text-decoration: none;
-  color: black;
 }
 
 a:active {
@@ -31,13 +31,14 @@ a:visited {
 
 .container {
   font-size: 24px;
-  max-width: 800px;
   margin: 30px auto;
+  max-width: 800px;
 }
 
 .blog-post-preview {
   color: #303030;
   margin: 22px;
+  overflow: hidden;
 }
 
 .blog-post-preview h2 a {
@@ -63,19 +64,19 @@ a:visited {
 
 .blog-post-preview > .content {
   border: .5px solid #E3DDD9;
-  width: calc(100% - 184px);  /* calc combines px and %*/
+  float: left;
   padding: 20px;
-  display: inline-block;
   vertical-align: top;
+  width: calc(100% - 184px);  /* calc combines px and %*/
 }
 
 .blog-post-preview > .image {
-  height: 142px;
-  width: 142px;
   background-size: cover;
-  float: right;
   display: inline-block;
+  float: right;
+  height: 142px;
   vertical-align: top;
+  width: 142px;
 }
 
 #t1 {
@@ -90,18 +91,18 @@ a:visited {
   background-image: url("../images/blog/coat-check.jpg");
 }
 
-#c4 {
-  background-image: url("../images/blog/amy-purdy.jpg");
-}
-
-#c3 {
-  background-image: url("../images/blog/thinking-chimp.jpg");
-}
-
 #t4 {
   background-image: url("../images/blog/21-and-over.jpg");
 }
 
 #c1 {
   background-image: url("../images/blog/chefs-kitchen.jpg");
+}
+
+#c3 {
+  background-image: url("../images/blog/thinking-chimp.jpg");
+}
+
+#c4 {
+  background-image: url("../images/blog/amy-purdy.jpg");
 }
