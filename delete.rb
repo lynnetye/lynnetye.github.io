@@ -1,3 +1,4 @@
+
 class Organism
   attr_accessor :name
 

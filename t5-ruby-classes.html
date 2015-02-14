@@ -10,13 +10,13 @@
 <body>
   <header>
     <div class="image"></div>
-    <h1>Title of Blog Post--A really long title here</h1>
-    <h2>Subtitle of Blog Post</h2>
-    <h3>Date and Read Time of Blog Post</h3>
+    <h1>Ruby Classes Meet the Animal Kindgom</h1>
+    <h2>Cheetah eat antelope?</h2>
+    <h3>February 14th, 2015 : 7 minutes</h3>
   </header>
   <div class="blog-text">
     <section>
-      <p>I am really trying to understand classes. Not just the syntax and general properties, but also giving purpose and meaning to classes, their super-class, and their sub-classes. Let's give it a go:</p>
+      <p>I am really trying to understand classes beyond the syntax and general properties. I want to give purpose and meaning to classes, their super-class, and their sub-classes! So let me give it a go:</p>
       <p>I love cheetahs. They're the most beautiful animal, both fierce and elegant. But I feel a little sad when they eat antelope, another beautifully graceful animal. What do cheetahs and antelope have in common? Well...they're both animals that eat something. So I'll make an Animal class that allows me to call the method #eat(food) to find out if my animal will eat that food.</p>
 
       <img src="images/t5-ruby-classes-images/image-1.png"/>
@@ -26,12 +26,60 @@
       <img src="images/t5-ruby-classes-images/image-2.png"/>
 
       <p>Since carnivores, omnivores, and herbivores are all just types of animals, they should have the same properties as animals. So notice that the Carnivore, Omnivore, and Herbivore classes are defined to inherit all of the functions of their parent Animal class.</p>
-      <p>Now let's write a #can_eat? method that describes what each of these subclasses can eat! Carnivores eat all animals. Omnivores eat both animals...and plants! Herbivores eat all plants. Wait, what are plants? No problem. We should also make a new Plant class.</p>
+      <p>Now let's write a #can_eat? method that describes what each of these subclasses can eat! Carnivores eat all animals. Omnivores eat both animals...and plants! Herbivores eat all plants. Wait, what are plants? No problem. We'll also make a new Plant class.</p>
 
       <img src="images/t5-ruby-classes-images/image-3.png"/>
       <img src="images/t5-ruby-classes-images/image-4.png"/>
 
+      <p>We had to define #can_eat? for each of our subclasses because, well, carnivores, omnivores, and herbivores don't eat the same things. They each need their own conditions. However, carnivores, omnivores, and herbivores all eat some kind of food, right? So now we will call each of the subclasses' #can_eat? methods in the Animal superclass.
+      </p>
 
+      <img src="images/t5-ruby-classes-images/image-5.png"/>
+
+      <p>Let's take a moment here to play around in irb. With the code we have so far, we can find out whether cheetah eats antelope. And...whether antelope eats cheetah?!
+      </p>
+
+      <img src="images/t5-ruby-classes-images/image-6.png"/>
+
+      <p>I am an omnivore. Would I eat cheetah or antelope? How about spinach?
+      </p>
+
+      <img src="images/t5-ruby-classes-images/image-7.png"/>
+
+      <p>What we've done is created instances of the Carnivore class (cheetah), the Omnivore class (human), Herbivore class (antelope), and the Plant class (spinach). We call the #eat method on our cheetah and antelope objects, even though it was defined in the Animal class. Why? Because the Carnivore and Herbivore subclasses inherited all functions of the Animal class! This is also true of the human object, which is an instance of the Omnivore class, which is a subclass of Animal. It's no surprise that the human thinks everything is yummy then since omnivores eat both meat and veggies!
+      </p>
+      <p>This is a good demonstration of how to build a class, a subclass, and the relationship between those two things. If that is all you need, then feel free to stop here. It is a good introduction to Class structure and inheritance. But maybe you want to play around a little more with me...
+      </p>
+      <p>What if I want to have multiple instances of the same subclass. Let's say I want to have two humans, two cheetahs, and two antelope. I can create names. And since I want to name plants, carnivores, omnivores, and herbivores alike, I can create a superclass called Organism using "attr_accessor", which allows us to read and write each name as we please. We can also require the name when we initialize.
+      </p>
+
+      <img src="images/t5-ruby-classes-images/image-8.png"/>
+
+      <p>And in order for our Animal and Plant classes to fall under the Organism superclass and inherit this function, we have to explicitly state that, like this:
+      </p>
+
+      <img src="images/t5-ruby-classes-images/image-9.png"/>
+      <img src="images/t5-ruby-classes-images/image-10.png"/>
+
+      <p>Back to irb! We can see that we have to input a name every time we instantiate an object under the Organism superclass.
+      </p>
+
+      <img src="images/t5-ruby-classes-images/image-11.png"/>
+
+      <p>Yay! And we can use the ability to read the name (since we used "attr_accessor") whenever we want. So let's do that by fancifying our messages when we call the #eat method.
+      </p>
+
+      <img src="images/t5-ruby-classes-images/image-12.png"/>
+      <img src="images/t5-ruby-classes-images/image-13.png"/>
+
+      <p>Okay, okay. The very last thing I want to do is account for a couple of edge cases. What if human wants to eat another human?! Or worse...what if human wants to eat itself... Let's take that into account in our #eat method in the Animal class. To be clear, my name is Lynne and my friend is named Courtland.
+      </p>
+
+      <img src="images/t5-ruby-classes-images/image-14.png"/>
+      <img src="images/t5-ruby-classes-images/image-15.png"/>
+
+      <p>And there we have it! A little exhaustive but I hope this was a good demonstration of what Classes are, when to use them, and how to use them! And remember, don't eat your friends!
+      </p>
     </section>
   </div>
 </body>
