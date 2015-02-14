@@ -30,25 +30,25 @@ tv_hash.group_by { |show, night| night }
 
 #EXAMPLE 1
 
-ages = [25, 32, 22, 29, 26, 21, 26, 30, 31, 20]
-ages.group_by { |age| age > 21 }
+ages = [25, 32, 21, 29, 26, 20, 26, 30, 31, 20]
+ages.group_by { |age| age >= 21 }
 
-=> {true=>[25, 32, 22, 29, 26, 26, 30, 31], false=>[21, 20]}
+=> {true=>[25, 32, 21, 29, 26, 26, 30, 31], false=>[20, 20]}
 
 
 
 #EXAMPLE 2
 
-ages = [25, 32, 22, 29, 26, 21, 26, 30, 31, 20]
+ages = [25, 32, 21, 29, 26, 20, 26, 30, 31, 20]
 ages.group_by do |age|
-  if age > 21
+  if age >= 21
     age = "Party Peoples!"
   else
     age = "Too Young..."
   end
 end
 
-=> {"Party Peoples!"=>[25, 32, 22, 29, 26, 26, 30, 31], "Too Young..."=>[21, 20]}
+=> {"Party Peoples!"=>[25, 32, 21, 29, 26, 26, 30, 31], "Too Young..."=>[20, 20]}
 
 #EXAMPLE 3
 
@@ -56,10 +56,10 @@ friends_ages = Hash.new
 friends_ages = {
   "Oliver" => 25,
   "Bae" => 32,
-  "Ramsey" => 22,
+  "Ramsey" => 21,
   "Allyson" => 29,
   "Courtland" => 26,
-  "Emerson" => 21,
+  "Emerson" => 20,
   "Jay" => 26,
   "David" => 30,
   "Robyn" => 31,
@@ -67,18 +67,18 @@ friends_ages = {
 }
 
 friends_ages.group_by do |name, age|
-  if age > 21
+  if age >= 21
      age = "Party Peoples!"
   else
     age = "Too Young..."
   end
 end
 
-=> {"Party Peoples!"=>[["Oliver", 25], ["Bae", 32], ["Ramsey", 22], ["Allyson", 29], ["Courtland", 26], ["Jay", 26], ["David", 30], ["Robyn", 31]], "Too Young..."=>[["Emerson", 21], ["Abbey", 20]]}
+=> {"Party Peoples!"=>[["Oliver", 25], ["Bae", 32], ["Ramsey", 21], ["Allyson", 29], ["Courtland", 26], ["Jay", 26], ["David", 30], ["Robyn", 31]], "Too Young..."=>[["Emerson", 20], ["Abbey", 20]]}
 
 
 friends_ages.group_by do |name, age|
-  if age < 22
+  if age <= 21
     age = "Too Young"
   elsif age < 30
     age = "Twenties"
@@ -87,11 +87,11 @@ friends_ages.group_by do |name, age|
   end
 end
 
-=> {"Twenties"=>[["Oliver", 25], ["Ramsey", 22], ["Allyson", 29], ["Courtland", 26], ["Jay", 26]], "Thirties"=>[["Bae", 32], ["David", 30], ["Robyn", 31]], "Too Young"=>[["Emerson", 21], ["Abbey", 20]]}
+=> {"Twenties"=>[["Oliver", 25], ["Ramsey", 21], ["Allyson", 29], ["Courtland", 26], ["Jay", 26]], "Thirties"=>[["Bae", 32], ["David", 30], ["Robyn", 31]], "Too Young"=>[["Emerson", 20], ["Abbey", 20]]}
 
 
 
 
 friends_ages.group_by {[:bring_chasers, :bring_snacks][rand(2)]}
 
-=> {:bring_chasers=>[["Oliver", 25], ["Bae", 32], ["Allyson", 29], ["Abbey", 20]], :bring_snacks=>[["Ramsey", 22], ["Courtland", 26], ["Emerson", 21], ["Jay", 26], ["David", 30], ["Robyn", 31]]}
+=> {:bring_chasers=>[["Oliver", 25], ["Bae", 32], ["Allyson", 29], ["Abbey", 20]], :bring_snacks=>[["Ramsey", 21], ["Courtland", 26], ["Emerson", 20], ["Jay", 26], ["David", 30], ["Robyn", 31]]}
