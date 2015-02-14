@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="stylesheets/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="stylesheets/t5-ruby-classes.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic|Merriweather:400,300,300italic,400italic,700italic,700|Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header>
+    <div class="image"></div>
+    <h1>Title of Blog Post--A really long title here</h1>
+    <h2>Subtitle of Blog Post</h2>
+    <h3>Date and Read Time of Blog Post</h3>
+  </header>
+  <div class="blog-text">
+    <section>
+      <p>I am really trying to understand classes. Not just the syntax and general properties, but also giving purpose and meaning to classes, their super-class, and their sub-classes. Let's give it a go:</p>
+      <p>I love cheetahs. They're the most beautiful animal, both fierce and elegant. But I feel a little sad when they eat antelope, another beautifully graceful animal. What do cheetahs and antelope have in common? Well...they're both animals that eat something. So I'll make an Animal class that allows me to call the method #eat(food) to find out if my animal will eat that food.</p>
+
+      <img src="images/t5-ruby-classes-images/image-1.png"/>
+
+      <p>Hm. Thinking back to my cheetah and antelope, cheetahs eat antelope but antelope do not eat cheetahs. So I'm going to make subclasses for all of the different type of eaters animals can be. Which means I should rep all the veggie-lovers out there.</p>
+
+      <img src="images/t5-ruby-classes-images/image-2.png"/>
+
+      <p>Since carnivores, omnivores, and herbivores are all just types of animals, they should have the same properties as animals. So notice that the Carnivore, Omnivore, and Herbivore classes are defined to inherit all of the functions of their parent Animal class.</p>
+      <p>Now let's write a #can_eat? method that describes what each of these subclasses can eat! Carnivores eat all animals. Omnivores eat both animals...and plants! Herbivores eat all plants. Wait, what are plants? No problem. We should also make a new Plant class.</p>
+
+      <img src="images/t5-ruby-classes-images/image-3.png"/>
+      <img src="images/t5-ruby-classes-images/image-4.png"/>
+
+
+    </section>
+  </div>
+</body>
+
+</html>
