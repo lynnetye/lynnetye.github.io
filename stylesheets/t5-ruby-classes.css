@@ -16,7 +16,7 @@ header {
 
 .image {
   background-image: url("../images/blog/cheetah-eat-antelope.jpg");
-  background-position: 0px -60px;
+  background-position: 0px 0px;
   background-size: cover;
   height: 400px;
   margin: 50px auto;

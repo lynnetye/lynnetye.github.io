@@ -56,16 +56,16 @@ cheetah = Carnivore.new("cheetah")
 
 
 human = Omnivore.new("human")
-spinach = Herbivore.new("spinach")
+spinach = Plant.new("spinach")
 
-# human.eat(cheetah)
-# => "Yummy!"
+human.eat(cheetah)
+=> "Yummy!"
 
-# human.eat(antelope)
-# => "Yummy!"
+human.eat(antelope)
+=> "Yummy!"
 
-# human.eat(spinach)
-# => "Yummy!"
+human.eat(spinach)
+=> "Yummy!"
 
 cheetah = Carnivore.new("cheetah")
 antelope = Herbivore.new("antelope")
