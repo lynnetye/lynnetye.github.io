@@ -16,11 +16,11 @@ header {
 
 .image {
   background-image: url("../images/blog/stereotypes.jpg");
-  background-position: 0px 0px;
+  background-position: 0px -20px;
   background-size: cover;
-  height: 400px;
+  height: 450px;
   margin: 50px auto;
-  width: 700px;
+  width: 640px;
 }
 
 h1 {
