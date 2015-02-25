@@ -57,5 +57,10 @@ p {
 }
 
 .paragraph-head {
+  padding-top: 30px;
   font-weight: bold;
+}
+
+.indent {
+  padding-left: 40px;
 }
