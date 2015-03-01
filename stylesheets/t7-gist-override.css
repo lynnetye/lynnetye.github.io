@@ -1,0 +1,26 @@
+.gist .gist-meta {
+  display: none;
+}
+
+.gist {
+  display: inline-block;
+  width: 47%;
+  margin: 0px 1%;
+}
+
+.gist .line {
+  font-size: 16px;
+  text-align: left;
+}
+
+.gist .line-numbers {
+  font-size: 16px;
+}
+
+.code-snippet-container .language-label {
+  display: inline-block;
+  font-size: 26px;
+  width: 48%;
+  margin: 10px 0px;
+}
+
