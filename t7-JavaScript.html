@@ -3,90 +3,77 @@
 
 <head>
   <link type="text/css" rel="stylesheet" href="stylesheets/reset.css"/>
-  <link type="text/css" rel="stylesheet" href="stylesheets/blog-post-template.css"/>
+  <link type="text/css" rel="stylesheet" href="stylesheets/t7-JavaScript.css"/>
+  <link type="text/css" rel="stylesheet" href="stylesheets/gist-override.css"/>
   <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic|Merriweather:400,300,300italic,400italic,700italic,700|Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
   <header>
     <div class="image"></div>
-    <h1>Ruby versus JavaScript Cheat Sheet</h1>
+    <h1>Ruby vs. JavaScript Cheat Sheet</h1>
     <h2>For my own personal use and reference</h2>
     <h3>February 26th, 2015 : 2 minutes</h3>
   </header>
   <div class="blog-text">
     <section>
       <p>I've spent 4-5 weeks learning Ruby and now I'm learning JavaScript for the very first time. As I learn JS, here are some of the major differences that I want to keep straight.</p>
-      <p class="paragraph-head">Ruby versus JavaScript</p>
-      <p></p>
-      <pre>
-          def happy
-          end
-      </pre>
-      <table>
-        <tr>
-          <th>Concept</th>
-          <th>Ruby</th>
-          <th>JavaScript</th>
-        </tr>
-        <tr>
-          <td>printing to the console</td>
-          <td>puts "Print me!"</td>
-          <td>console.log("Print me!");</td>
-        </tr>
-        <tr>
-        <tr>
-          <td>variable naming (conventionally)</td>
-          <td>name_variables_with_underscores = "Yay, I'm a string!"</td>
-          <td>var nameVariablesWithCamelCase = "Yay, I'm a string!";</td>
-        </tr>
-          <td>determining an object's value type</td>
-          <td>object_name.class</td>
-          <td>typeof objectName</td>
-        </tr>
-        <tr>
-          <td>all those equal signs: x = 5, y = "5"</td>
-          <td>x == y is false</td>
-          <td>x == y is true; x === y is false (=== compares value and type</td>
-        </tr>
-        <tr>
-          <td>using logical operators</td>
-          <td>if x == y && x > 10 </td>
-          <td>if (x==y && > 10)</td>
-        </tr>
-        <tr>
-          <td>incrementing/decrementing by 1</td>
-          <td>x += 1</td>
-          <td>x += 1; x++</td>
-        </tr>
-        <tr> <!-- provide images! -->
-          <td>writing functions</td>
-          <td>def function_name end</td>
-          <td>function functionName() {}</td>
-        </tr>
-        <tr> <!-- provide images! -->
-          <td>array syntax; finding the index</td>
-          <td>big_cities = ["SF", "LA", "NYC"]; big_cities.index("SF")</td>
-          <td>var bigCities = ["SF", "LA", "NYC"]; bigCities.indexOf("SF");</td>
-        </tr>
-        <tr> <!-- provide images! -->
-          <td>key-value pairs</td>
-          <td>hashes</td>
-          <td>objects declared as variables;
-           var exercise = {monday: "run", wednesday: "yoga", thursday: "climb"}; exercise.friday = "dance";</td>
-        </tr>
-        <!-- http://agentcooper.github.io/js-ruby-comparison/ -->
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+
+      <div class="code-snippet-container">
+        <p class="language-label">Ruby</p>
+        <p class="language-label">JavaScript</p>
+        <p>...naming variables...</p>
+        <script src="https://gist.github.com/lynnetye/c8045355d5984bd15d74.js"></script>
+        <script src="https://gist.github.com/lynnetye/31fa0daf85a931ed7950.js"></script>
+      </div>
+
+      <div class="code-snippet-container">
+        <p>...determining an object's value type...</p>
+          <script src="https://gist.github.com/lynnetye/8802eeff4ac19bce4a38.js"></script>
+          <script src="https://gist.github.com/lynnetye/74c6b92d54fc175d53c8.js"></script>
+      </div>
+
+      <div class="code-snippet-container">
+        <p>...printing to the console...</p>
+        <script src="https://gist.github.com/lynnetye/82f1ddb0ab0ac31e4835.js"></script>
+        <script class="js-code-snippet" src="https://gist.github.com/lynnetye/1a45701ec7b948a9750a.js"></script>
+      </div>
+
+      <div class="code-snippet-container">
+        <p>...methods/functions...</p>
+          <script src="https://gist.github.com/lynnetye/7339c0f2abdd54938b6a.js"></script>
+          <script src="https://gist.github.com/lynnetye/c5b26c7dcbd5f7229e52.js"></script>
+      </div>
+
+      <div class="code-snippet-container">
+        <p>...comparing values (all of those equal signs)...</p>
+          <script src="https://gist.github.com/lynnetye/1a60d9046d145ee4127f.js"></script>
+          <script src="https://gist.github.com/lynnetye/7c179ea157a4cdf5c896.js"></script>
+      </div>
+
+      <div class="code-snippet-container">
+        <p>...using logical operators...</p>
+          <script src="https://gist.github.com/lynnetye/71508e5c6eaf9988882a.js"></script>
+          <script src="https://gist.github.com/lynnetye/e8d358fb4ea307e58142.js"></script>
+      </div>
+
+      <div class="code-snippet-container">
+        <p>...incrementing/decrementing by 1...</p>
+          <script src="https://gist.github.com/lynnetye/7d2488bfda048c57c97b.js"></script>
+          <script src="https://gist.github.com/lynnetye/6a4a574dfbc7966c55e9.js"></script>
+      </div>
+
+      <div class="code-snippet-container" id="extra-wide">
+        <p>...array syntax; finding the index...</p>
+        <script src="https://gist.github.com/lynnetye/306608cd38747b99666b.js"></script>
+        <script src="https://gist.github.com/lynnetye/a3634cffd35073e2d923.js"></script>
+      </div>
+
+      <div class="code-snippet-container" id="extra-wide">
+        <p>...objects vs. hashes...</p>
+        <script src="https://gist.github.com/lynnetye/78228fc84dbf6abc5be8.js"></script>
+        <script src="https://gist.github.com/lynnetye/e1db60138e5f8ce889a5.js"></script>
+      </div>
     </section>
   </div>
 </body>

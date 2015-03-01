@@ -27,7 +27,7 @@ h1 {
   font-size: 50px;
   line-height: 120%;
   margin: 25px auto;
-  max-width: 700px;
+  max-width: 740px;
 }
 
 h2 {
@@ -44,12 +44,25 @@ h3 {
   margin: 15px;
 }
 
-.blog-text > section {
+.blog-text > section > .code-snippet-container {
   font-size: 20px;
   line-height: 160%;
-  margin: 30px auto;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 10px ;
+  text-align: center;
+}
+
+.blog-text > section > #extra-wide {
+  max-width: 1340px;
+}
+
+.blog-text > section > p {
+  font-size: 20px;
+  line-height: 160%;
+  padding: 30px 0px 20px 0px;
   max-width: 700px;
-  padding: 20px ;
+  margin: 0px auto;
 }
 
 p {
@@ -60,7 +73,6 @@ p {
   font-weight: bold;
 }
 
-
-pre {
-  background-color: blue;
+.code-snippet-container {
+  margin-top: 20px;
 }
