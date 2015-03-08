@@ -137,3 +137,12 @@ a:visited {
 #cheat-sheet {
   background-image: url("../images/blog/back-to-school.jpg");
 }
+
+#c8 {
+  background-image: url("../images/blog/grand-canyon.jpg");
+}
+
+#t8 {
+  background-image: url("../images/blog/recursion-tree.jpg");
+  background-position: -6px 0px;
+}

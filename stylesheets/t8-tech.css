@@ -15,7 +15,7 @@ header {
 }
 
 .image {
-  background-image: url("../images/blog/grand-canyon.jpg");
+  background-image: url("../images/blog/recursion-tree.jpg");
   background-position: 0px -60px;
   background-size: cover;
   height: 400px;
@@ -58,28 +58,4 @@ p {
 
 .paragraph-head {
   font-weight: bold;
-}
-
-.indent {
-  padding-left: 20px;
-}
-
-.indent-indent {
-  padding-left: 40px;
-}
-
-.image2 {
-  background-image: url("../images/blog/danger-sign.jpg");
-  background-size: cover;
-  height: 400px;
-  margin: 50px auto;
-  width: 700px;
-}
-
-.image3 {
-  background-image: url("../images/blog/GC-trail-map.jpg");
-  background-size: cover;
-  height: 400px;
-  margin: 50px auto;
-  width: 700px;
 }
