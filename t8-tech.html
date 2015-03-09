@@ -12,7 +12,7 @@
   <header>
     <div class="image"></div>
     <h1>Recursion</h1>
-    <h2>In order to understand recursion, you must understand recursion</h2>
+    <h2>To understand it, you must first understand recursion</h2>
     <h3>March 8th, 2015 : 2 minutes</h3>
   </header>
   <div class="blog-text">
@@ -30,10 +30,13 @@
       <script src="https://gist.github.com/lynnetye/0d20f0faca6f08355d34.js"></script>
       <p>You can see that we are recursively calling (n-1)! on each line as we count down from six. We could re-write this in Ruby as follows:</p>
       <script src="https://gist.github.com/lynnetye/41b3328982296b54e6f4.js"></script>
- <!--      <p>
- a computer programming technique involving the use of a procedure, subroutine, function, or algorithm that calls itself one or more times until a specified condition is met at which time the rest of each repetition is processed from the last one called to the first — compare iteration
+      <p>Here, we have create a method that calls itself until 'num > 0' is no longer true. In the recursive algorithm for factorials, you can see that we rely on the computer's "memory" in order for the method to carry out its business. The computer must hold on to the information from the previous state (in what is called the "activation stack") in order to apply it to the next call.</p>
+      <p>Even though recursion is one of the central ideas in computer science, it is not always the prefered option. In fact, many programming languages (including Ruby) are not built to support recursion and therefore lean towards iteration and looping. In a much more complicated problem or method, the stack requires more space on your computer and can be prone to stack overflow (aka, a program crash). In these cases, iterating through loops is preferable.</p>
+      <script src="https://gist.github.com/lynnetye/259ad6f6f8b4ed79f777.js"></script>
+      <p>Using recursion can produce more elegant solutions to a given problem, but it is important to understand when it is appropriate. In the field of computer science, a deep understanding of recursion is thought to separate experts from novices, so it is a good time to start learning.</p>
 
-defining a problem in terms of itself, or creating a solution to a problem with simpler versions of itself. In learning about recursion, I can search for definitions in Google and click the first link that shows up. I can then read that site and when I understand it, click  is calling is a method in which a function calls itself repeatedly, but finitely. -->
+      <p class="definition">recursion: "a computer programming technique involving the use of a procedure, subroutine, function, or algorithm that calls itself one or more times until a specified condition is met at which time the rest of each repetition is processed from the last one called to the first"</p>
+      <p class="definition">recursion: "defining a problem in terms of itself, or creating a solution to a problem with simpler versions of itself"</p>
     </section>
   </div>
 </body>

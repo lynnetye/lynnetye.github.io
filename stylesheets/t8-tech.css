@@ -15,7 +15,7 @@ header {
 }
 
 .image {
-  background-image: url("../images/blog/recursion-tree.jpg");
+  background-image: url("../images/blog/recursive-mirrors.jpg");
   background-position: 0px -60px;
   background-size: cover;
   height: 400px;
@@ -58,4 +58,14 @@ p {
 
 .paragraph-head {
   font-weight: bold;
+}
+
+.indent {
+  padding-left: 20px;
+}
+
+.definition {
+  font-size: 14px;
+  font-style: italic;
+  padding-top: 30px;
 }

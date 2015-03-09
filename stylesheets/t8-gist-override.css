@@ -1,0 +1,18 @@
+.gist .gist-meta {
+  display: none;
+}
+
+.gist {
+  display: inline-block;
+  width: 100%;
+  margin: 0px 1%;
+}
+
+.gist .line {
+  font-size: 15px;
+  text-align: left;
+}
+
+.gist .line-numbers {
+  font-size: 15px;
+}
